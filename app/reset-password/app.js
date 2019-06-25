@@ -12,10 +12,15 @@ function submitForm()  { 
   xhr.open("PUT", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      alert('Password changed successfully!');
-      var json = JSON.parse(xhr.responseText);
-      console.log(json);
+    if (xhr.readyState === 4) {
+      let json = JSON.parse(xhr.responseText);
+
+      if (xhr.status === 200) {
+        alert('Password changed successfully!');
+        window.location.href = '/';
+      } else {
+        alert(json.status);
+      }
     }
   };
 
