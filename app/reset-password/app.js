@@ -1,3 +1,8 @@
+if (Math.floor(Date.now() / 1000) > findGetParameter('expires_at')) {
+  alert('The link that you followed has expired! Please get a new link and try again. Only the latest link will work.');
+  window.location.href = '/';
+}
+
 function submitForm()  { 
   let newPassword = document.getElementById("inputPassword").value;
   let newPasswordAgain = document.getElementById("inputPasswordAgain").value;
