@@ -48,15 +48,15 @@ function fetchLayers(callback) {
 
       for (map of out) {
         let urls = [];
-        for (url of map['urls']) {
-          urls.push(L.tileLayer(url['template'], {
-            attribution: '<a href="' + map['copyright']['url'] + '">' + map['copyright']['text'] + '</a>',
-            minZoom: url['minZoom'],
-            maxZoom: url['maxZoom']
+        for (url of map.urls) {
+          urls.push(L.tileLayer(url.template, {
+            attribution: '<a href="' + map.copyright.url + '">' + map.copyright.text + '</a>',
+            minZoom: url.minZoom,
+            maxZoom: url.maxZoom
           }));
         }
 
-        let name = map['country'] + ' - ' + map['type'];
+        let name = map.country + ' - ' + map.type;
 
         layers[name] = L.layerGroup(urls);
       }
