@@ -11,7 +11,8 @@ function setupMap(layers) {
   let map = L.map('map').fitWorld();
 
   L.control.layers(layers).addTo(map);
-
+  L.control.locate().addTo(map);
+  
   map.on('locationfound', onLocationFound);
   map.on('locationerror', onLocationError);
 
