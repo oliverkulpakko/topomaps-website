@@ -13,7 +13,7 @@ function submitForm()  { 
   }
 
   var xhr = new XMLHttpRequest();
-  var url = "https://kulpakko.com/api/topomaps/users/passwords";
+  var url = "https://eaststudios.net/api/topomaps3/users/passwords";
   xhr.open("PUT", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function() {

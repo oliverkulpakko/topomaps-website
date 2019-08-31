@@ -40,7 +40,7 @@ function onLocationError(e) {
 // Data
 
 function fetchLayers(callback) {
-  let url = "https://kulpakko.com/api/topomaps/maps";
+  let url = "https://eaststudios.net/api/topomaps3/maps";
 
   fetch(url)
     .then(res => res.json())
