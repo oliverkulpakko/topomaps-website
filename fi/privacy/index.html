@@ -1,65 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Tietosuojaseloste | Maastokartat</title>
-    <link rel="stylesheet" href="../../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../home.css">
+    <title>Tietosuojaseloste | Maastokartat</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Topo Maps</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Näytä/piilota navigointi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../">Koti</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="privacy/">Tietosuoja <span class="sr-only">(nykyinen)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq/">Usein kysytyt kysymykset</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
-        <h1>Tietosuojaseloste</h1>
+        <main>
+            <div class="card mb-3">
+                <h3 class="card-header">Tietosuojaseloste</h3>
+                <div class="card-body">
+                    <p class="card-text"><b>Maastokartat</b> on sovellus, joka on saatavilla iOS, watchOS ja macOS-käyttöjärjestelmää käyttäville laitteille Applen App Storesta.</p>
+                    <p class="card-text">Rekisterinpitäjänä toimii sovelluksen kehittäjä, Oliver Kulpakko.</p>
+                </div>
+            </div>
 
-        <p><b>Maastokartat</b> on sovellus, joka on saatavilla iOS, watchOS ja macOS-käyttöjärjestelmää käyttäville laitteille Applen App Storesta.</p>
-        <p>Rekisterinpitäjänä toimii sovelluksen kehittäjä, Oliver Kulpakko.</p>
+            <div class="card mb-3">
+                <h5 class="card-header">Mitä tietoja keräämme?</h5>
+                <div class="card-body">
+                    <p class="card-text">Jos et ole kirjautuneena sovellukseen, mitään käyttäjätietoja ei tallenneta.</p>
+                    <p class="card-text">Sovellus sisältää mahdollisuuden käyttäjäksi rekisteröitymiseen, jolloin käyttäjätilin perustiedot tallennetaan.</p>
+                    <p class="card-text">Sähköpostiosoitetta käytetään ainoastaan kirjautumiseen, salasanojen nollaamiseen, tärkeiden henkilökohtaisten ilmoitusten ja sinun lähettämien sähköpostien vastaamiseen. Emme lähetä mainossähköpostia.</p>
+                    <p class="card-text">Tallennamme myös viimeisimmän sijaintisi ja kirjanmerkkisi, jotta voimme tarjota sijainnin jaon ja kirjanmerkkien synkronointitoiminnot.</p>
+                    <p class="card-text">Keräämme myös anonyymiä analytiikkadataa esimerkiksi siitä, mitä karttatyyppejä käytetään, kuinka suuria alueita yleensä ladataan, yms. parantaaksemme sovellusta.</p>
+                </div>
+            </div>
 
-        <h2>Mitä tietoja keräämme?</h2>
-        <p>Jos et ole kirjautuneena sovellukseen, mitään käyttäjätietoja ei tallenneta.</p>
-        <p>Sovellus sisältää mahdollisuuden käyttäjäksi rekisteröitymiseen, jolloin käyttäjätilin perustiedot tallennetaan.</p>
-        <p>Sähköpostiosoitetta käytetään ainoastaan kirjautumiseen, salasanojen nollaamiseen, tärkeiden henkilökohtaisten ilmoitusten ja sinun lähettämien sähköpostien vastaamiseen. Emme lähetä mainossähköpostia.</p>
-        <p>Tallennamme myös viimeisimmän sijaintisi ja kirjanmerkkisi, jotta voimme tarjota sijainnin jaon ja kirjanmerkkien synkronointitoiminnot.</p>
-        <p>Keräämme myös anonyymiä analytiikkadataa esimerkiksi siitä, mitä karttatyyppejä käytetään, kuinka suuria alueita yleensä ladataan, yms. parantaaksemme sovellusta.</p>
+            <div class="card mb-3">
+                <h5 class="card-header">Kirjanmerkkien synkronointi</h5>
+                <div class="card-body">
+                    <p class="card-text">Tallennamme kirjanmerkkisi (paikat ja reitit) palvelimellamme, kun olet kirjautuneena.</p>
+                    <p class="card-text">Tämä mahdollistaa sen, että kaikilla laitteillasi on samat kirjanmerkit. Se tuo myös pientä lisäturvaa, sillä vahingossa poistetut kirjanmerkit ovat hetken ajan palautettavissa.</p>
+                    <p class="card-text">Poistaessasi kirjanmerkin omalla laitteellasi, poistuu se myös palvelimeltamme parin päivän kuluessa.</p>
+                </div>
+            </div>
 
-        <h3>Kirjanmerkkien synkronointi</h3>
-        <p>Tallennamme kirjanmerkkisi (paikat ja reitit) palvelimellamme, kun olet kirjautuneena.</p>
-        <p>Tämä mahdollistaa sen, että kaikilla laitteillasi on samat kirjanmerkit. Se tuo myös pientä lisäturvaa, sillä vahingossa poistetut kirjanmerkit ovat hetken ajan palautettavissa.</p>
-        <p>Poistaessasi kirjanmerkin omalla laitteellasi, poistuu se myös palvelimeltamme parin päivän kuluessa.</p>
+            <div class="card mb-3">
+                <h5 class="card-header">Sijainnin jako</h5>
+                <div class="card-body">
+                    <p class="card-text">Tallennamme viimeisimmän sijaintisi palvelimellamme, kun olet kirjautuneena. Emme säilytä sijaintihistoriaasi. Sijainnin muuttuessa aiempi sijainti ylikirjoittuu.</p>
+                    <p class="card-text">Sovellus tarjoaa mahdollisuuden jakaa oma sijaintisi toisten käyttäjien kanssa. Ainoastaan käyttäjät, joille olet antanut erikseen luvan, on pääsy sijaintiisi. Voit poistaa luvan milloin tahansa, ja sen voi myös laittaa umpeutumaan
+                        automaattisesti.
+                    </p>
+                </div>
+            </div>
 
-        <h3>Sijainnin jako</h3>
-        <p>Tallennamme viimeisimmän sijaintisi palvelimellamme, kun olet kirjautuneena. Emme säilytä sijaintihistoriaasi. Sijainnin muuttuessa aiempi sijainti ylikirjoittuu.</p>
-        <p>Sovellus tarjoaa mahdollisuuden jakaa oma sijaintisi toisten käyttäjien kanssa. Ainoastaan käyttäjät, joille olet antanut erikseen luvan, on pääsy sijaintiisi. Voit poistaa luvan milloin tahansa, ja sen voi myös laittaa umpeutumaan automaattisesti.</p>
+            <div class="card mb-3">
+                <h5 class="card-header">Analytiikka</h5>
+                <div class="card-body">
+                    <p class="card-text">Sovellus kerää anonyymiä tilastotietoa. Tähän kuuluu esimerkiksi: kuinka moni käyttäjä käyttää tiettyä karttatasoa, latautuvatko kartat hitaasti tietyllä alueella, jne.</p>
+                </div>
+            </div>
 
-        <h3>Analytiikka</h3>
-        <p>Sovellus kerää anonyymiä tilastotietoa. Tähän kuuluu esimerkiksi: kuinka moni käyttäjä käyttää tiettyä karttatasoa, latautuvatko kartat hitaasti tietyllä alueella, jne.</p>
+            <div class="card mb-3">
+                <h5 class="card-header">Mitä teemme tiedoilla?</h5>
+                <div class="card-body">
+                    <p class="card-text">Käytämme tietoja parantaaksemme palvelumme toimintaa.</p>
+                    <p class="card-text">Emme jaa henkilökohtaista tietoa kolmansille osapuolille.</p>
+                </div>
+            </div>
 
-        <h2>Mitä teemme tiedoilla?</h2>
-        <p>Käytämme tietoja parantaaksemme palvelumme toimintaa.</p>
-        <p>Emme jaa henkilökohtaista tietoa kolmansille osapuolille.</p>
+            <div class="card mb-3">
+                <h5 class="card-header">Ovatko tietoni turvassa?</h5>
+                <div class="card-body">
+                    <p class="card-text">Käytämme alan standardien mukaisia tietoturvakäytäntöjä. Esimerkiksi kaikki internet-liikenne palvelimellemme on salattua. Emme tallenna salasanoja selväkielisinä, vaan käytämme standardin mukaisia menetelmiä (tällä hetkellä algoritmi
+                        on
+                        <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a>).</p>
+                </div>
+            </div>
 
-        <h2>Ovatko tietoni turvassa?</h2>
-        <p>Käytämme alan standardien mukaisia tietoturvakäytäntöjä. Esimerkiksi kaikki internet-liikenne palvelimellemme on salattua. Emme tallenna salasanoja selväkielisinä, vaan käytämme standardin mukaisia menetelmiä (tällä hetkellä algoritmi on <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a>).</p>
+            <div class="card mb-3">
+                <h5 class="card-header">Siirrämmekö tietoa EU:n ulkopuolelle?</h5>
+                <div class="card-body">
+                    <p class="card-text">Emme siirrä tietoja EU-alueen ulkopuolelle.</p>
+                    <p class="card-text">Tällä hetkellä tiedot sijaitsevat fyysisesti Saksassa ja Suomessa.</p>
+                </div>
+            </div>
 
+            <div class="card mb-3">
+                <h5 class="card-header">Voinko tarkistaa tai poistaa omat tietoni?</h5>
+                <div class="card-body">
+                    <p class="card-text">Voit pyytää omien tietojesi tarkistamista, korjausta tai poistoa ottamalla meihin yhteyttä.</p>
+                </div>
+            </div>
 
-        <h2>Siirrämmekö tietoa EU:n ulkopuolelle?</h2>
-        <p>Emme siirrä tietoja EU-alueen ulkopuolelle.</p>
-        <p>Tällä hetkellä tiedot sijaitsevat fyysisesti Saksassa ja Suomessa.</p>
+            <div class="card mb-3">
+                <h5 class="card-header">Kolmansien osapuolten linkit ja sisältö</h5>
+                <div class="card-body">
+                    <p class="card-text">Sovelluksemme saattaa sisältää tietoja (esim. karttoja) kolmansien osapuolten palveluista, ja ne tarjotaan suoraan heidän omilta palvelimiltaan. Heillä on omat tietosuojakäytännöt, emmekä ota vastuuta heidän sisällöistään tai toimistaan.</p>
+                </div>
+            </div>
 
-        <h2>Voinko tarkistaa tai poistaa omat tietoni?</h2>
-        <p>Voit pyytää omien tietojesi tarkistamista, korjausta tai poistoa ottamalla meihin yhteyttä.</p>
-
-        <h2>Kolmansien osapuolten linkit ja sisältö</h2>
-        <p>Sovelluksemme saattaa sisältää tietoja (esim. karttoja) kolmansien osapuolten palveluista, ja ne tarjotaan suoraan heidän omilta palvelimiltaan. Heillä on omat tietosuojakäytännöt, emmekä ota vastuuta heidän sisällöistään tai toimistaan.</p>
-
-        <h2>Yhteystiedot</h2>
-        <p>Voit ottaa meihin yhteyttä milloin tahansa jos sinulla on jotain kysyttävää tietojesi käyttämisestä.</p>
-        <p>Voit olla meihin yhteyksissä sähköpostitse osoitteen <a href="mailto:tuki@topomaps.app">tuki@topomaps.app</a> kautta.</p>
+            <div class="card mb-3">
+                <h5 class="card-header">Yhteystiedot</h5>
+                <div class="card-body">
+                    <p class="card-text">Voit ottaa meihin yhteyttä milloin tahansa jos sinulla on jotain kysyttävää tietojesi käyttämisestä.</p>
+                    <p class="card-text">Voit olla meihin yhteyksissä sähköpostitse osoitteen <a href="mailto:tuki@topomaps.app">tuki@topomaps.app</a> kautta.</p>
+                </div>
+            </div>
+        </main>
     </div>
 
     <footer>
         <hr>
-        <p>&copy; Oliver Kulpakko 2015-2019</p>
+        <p class="card-text">&copy; Oliver Kulpakko 2015-2019</p>
 
         <div id="legal">
             <sup>Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</sup>
