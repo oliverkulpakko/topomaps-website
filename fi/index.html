@@ -1,74 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Maastokartat</title>
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../home.css">
+    <title>Maastokartat</title>
 </head>
 
 <body>
-  <header>
-    <img class="app-icon" src="/img/icon.svg" alt="App Icon">
-    <h1>Maastokartat</h1>
-    <p><b>Maastokartat</b> on karttasovellus iPhonelle, iPadille, Apple Watchille ja Macille, ja se sisältää maastokartat 15 maahan.</p>
-    <p>Voit kokeilla eri karttatyyppejä <a href="https://eaststudios.net/TopoMapsPreview/">täältä</a>.</p>
-    <a href="https://itunes.apple.com/app/topo-maps/id929001708"><img src="/img/Download_on_the_App_Store_Badge_FI_RGB_blk_100217.svg" alt="Lataa App Storesta"></a>
-    <a href="#" onclick="alert('Tulossa pian!');"><img src="/img/Download_on_the_Mac_App_Store_Badge_FI_RGB_blk_100217.svg" alt="Lataa Mac App Storesta"></a>
-    <!--<a href="https://apps.apple.com/app/topo-maps/id1239400279"><img src="/img/Download_on_the_Mac_App_Store_Badge_FI_RGB_blk_100217.svg" alt="Lataa Mac App Storesta"></a>-->
-  </header>
-
-  <div id="features">
-    <h2>Ominaisuudet:</h2>
-    <ol>
-      <li>
-        <p><b>Kartat</b></p>
-        <p>Kaiki käytössä olevat kartat ovat tarkimmat ja uusimmat saatavilla.</p>
-        <p>Kaikki kartat päivitetään säännöllisesti.</p>
-      </li>
-      <li>
-        <p><b>Karttojen lataus</b></p>
-        <p><b>Karttojen lataajan</b> avulla voit ladata suosikkialueidesi kartat laitteellesi offline-käyttöä varten. Voit ladata niin monta aluetta kuin haluat.</p>
-      </li>
-      <li>
-        <p><b>Kirjanmerkit</b></p>
-        <p>Lisää omia kirjanmerkkejä kartalle pitämällä sormea pohjassa. Voit myös nauhoittaa ja tallentaa reittejä. Jos sinulla on useita laitteita, kaikki kirjanmerkkisi synkronoituvat automaattisesti kaikkien laitteideisi välillä iCloudin avulla.</p>
-      </li>
-      <li>
-        <p><b>Sijainnin jako</b></p>
-        <p>Jaa sijaintisi muiden <b>Maastokartat</b>-sovelluksen käyttäjien kanssa antamalla heille sijainninjakokoodisi. He näkevät sinut kartallaan, kun sinulla on sovellus avoinna. Voit jakaa sijaintisi niin monen henkilön kanssa kuin haluat. Voit myös
-          lisätä rajattomasti muita käyttäjiä kartallesi.</p>
-      </li>
-      <li>
-        <p><b>Haku</b></p>
-        <p>Hae paikkoja, osoitteita tai koordinaatteja. Lista ehdotuksista nykyisen sijaintisi perusteella näytetään myös.</p>
-      </li>
-    </ol>
-  </div>
-
-  <div id="contact">
-    <h2>Ota yhteyttä</h2>
-    <p>Jos sinulla on ongelmia sovelluksen kanssa, tarkistathan ensin, löytyisikö <a href="faq/">usein kysytyistä kysymyksistä</a> vastausta, ja sen jälkeen lähetä viestiä alla olevaan sähköpostiosoitteeseen.</p>
-    <p>Jos sovelluksesta on jotain kysyttävää, lähetä sähköpostia osoitteeseen <a href="mailto:support@topomaps.app">support@topomaps.app</a></p>
-  </div>
-
-  <footer>
-    <hr>
-    <p>&copy; Oliver Kulpakko 2015-2019</p>
-
-    <div id="legal">
-      <sup>Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</sup>
-    </div>
-
-    <hr>
-
-    <nav>
-      <a href="privacy/">Rekisteriseloste</a>
-      <a href="faq/">Usein kysytyt kysymykset</a>
-      <a href="https://itunes.apple.com/app/topo-maps/id929001708">App Store</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Topo Maps</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Näytä/piilota navigointi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Koti <span class="sr-only">(nykyinen)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="privacy/">Tietosuoja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq/">Usein kysytyt kysymykset</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-  </footer>
+    <div class="container">
+        <main>
+            <div class="card mb-3">
+                <img src="../img/promo.png" class="card-img-top" alt="Topo Maps">
+                <div class="card-body">
+                    <div class="app-info">
+                        <img class="app-icon" src="../img/icon.svg">
+                        <h3 class="card-title">Maastokartat</h3>
+                    </div>
+
+                    <p class="card-text"><b>Maastokartat</b> on ulkoilukarttasovellus iOS:lle, iPadOS:lle, watchOS:lle ja macOS:lle. Sovellus sisältää kartat Suomeen ja maailmalle.</p>
+                    <p class="card-text">Sovelluksessa on useita hyödyllisiä ominaisuuksia, kuten karttojen offline-lataus, kirjanmerkit, pilvisynkronointi, sijainnin jako ja paljon muuta.</p>
+
+                    <a href="https://apps.apple.com/app/topo-maps/id929001708">
+                        <img src="../img/app-store-en.svg" alt="Lataa App Storesta">
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <section>
+            <div class="card mb-3">
+                <h5 class="card-header">Ota yhteyttä</h5>
+                <div class="card-body">
+                    <p class="card-text">Jos sinulla on mitään kysyttävää sovelluksesta, ota meihin yhteyttä <a href="mailto:tuki@topomaps.app">sähköpostilla</a>. Vastaamme niin pian kuin mahdollista.</p>
+                    <p class="card-text">Jos sinulla on ongelma sovelluksessa, on suositeltavaa lähettää viesti suoraan sovelluksen sisältä, näin saamme tarvittavat tiedot suoraan.</p>
+
+                    <a href="mailto:tuki@topomaps.app" class="btn btn-primary">tuki@topomaps.app</a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer>© Oliver Kulpakko 2015-2019</footer>
+    </div>
 </body>
 
 </html>
