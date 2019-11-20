@@ -2,223 +2,269 @@
 <html lang="fi">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Usein kysytyt kysymykset | Maastokartat</title>
-  <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../home.css">
+    <title>Usein kysytyt kysymykset | Maastokartat</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Usein kysytyt kysymykset</h1>
-    <p>Päivitetty viimeksi 8.11.2019.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Topo Maps</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Näytä/piilota navigointi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../">Koti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="privacy/">Tietosuoja</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="faq/">Usein kysytyt kysymykset <span class="sr-only">(nykyinen)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <div class="card mb-3">
+                <h3 class="card-header">Usein kysytyt kysymykset</h4>
+                    <div class="card-body">
+                        <p class="card-text">Päivitetty viimeksi 8.11.2019.</p>
+                        <ol>
+                            <li><a href="#bookmarks">Kirjanmerkit</a></li>
+                            <li><a href="#map-types">Karttatyypit</a></li>
+                            <li><a href="#map-downloader">Karttojen lataus</a></li>
+                            <li><a href="#account">Käyttäjätili</a></li>
+                            <li><a href="#location-sharing">Sijainnin jako</a></li>
+                            <li><a href="#search">Haku</a></li>
+                            <li><a href="#settings">Asetukset</a></li>
+                            <li><a href="#contact">Ota yhteyttä</a></li>
+                        </ol>
+                    </div>
+            </div>
 
-    <ol>
-      <li><a href="#bookmarks">Kirjanmerkit</a></li>
-      <li><a href="#map-types">Karttatyypit</a></li>
-      <li><a href="#map-downloader">Karttojen lataus</a></li>
-      <li><a href="#account">Käyttäjätili</a></li>
-      <li><a href="#location-sharing">Sijainnin jako</a></li>
-      <li><a href="#search">Haku</a></li>
-      <li><a href="#settings">Asetukset</a></li>
-      <li><a href="#contact">Ota yhteyttä</a></li>
-    </ol>
+            <div id="bookmarks" class="card mb-3">
+                <h3 class="card-header">1. Kirjanmerkit</h3>
+                <div class="card-body">
+                    <h4>Kuinka voin lisätä paikan kirjanmerkkeihin?</h4>
+                    <p class="card-text">Voit lisätä kirjanmerkin pitämällä sormea pohjassa kartalla haluamassasi kohdassa.</p>
+                    <p class="card-text">Avautuvassa ikkunassa kysytään kirjanmerkille nimeä. Nimeä ei ole pakko laittaa, mutta se auttaa sen tunnistamisessa, jos sinulla on paljon kirjanmerkkejä.</p>
 
-    <div id="bookmarks" class="category">
-      <h2>1. Kirjanmerkit</h2>
+                    <h4 id="find-bookmarks">Mistä löydän kirjanmerkkini?</h4>
+                    <p class="card-text">Pääset kirjanmerkkilistaan painamalla karttanäkymässä kirjan kuvaketta alhaalla keskellä.</p>
+                    <p class="card-text">Painamalla kirjanmerkkiä, kirjanmerkki aukeaa kartalla.</p>
 
-      <h3>Kuinka voin lisätä paikan kirjanmerkkeihin?</h3>
-      <p>Voit lisätä kirjanmerkin pitämällä sormea pohjassa kartalla haluamassasi kohdassa.</p>
-      <p>Avautuvassa ikkunassa kysytään kirjanmerkille nimeä. Nimeä ei ole pakko laittaa, mutta se auttaa sen tunnistamisessa, jos sinulla on paljon kirjanmerkkejä.</p>
+                    <h4>Miten saan kirjanmerkkini kaikille laitteille?</h4>
+                    <p class="card-text">Kun olet kirjautunut kaikilla laitteillasi samalla <a href="#account">käyttäjätilillä</a>, kaikki kirjanmerkkisi päivittyvät automaattisesti kaikkiin laitteisiisi.</p>
 
-      <h3 id="find-bookmarks">Mistä löydän kirjanmerkkini?</h3>
-      <p>Pääset kirjanmerkkilistaan painamalla karttanäkymässä kirjan kuvaketta alhaalla keskellä.</p>
-      <p>Painamalla kirjanmerkkiä, kirjanmerkki aukeaa kartalla.</p>
+                    <h4>Kuinka voin poistaa kirjanmerkin?</h4>
+                    <p class="card-text">Voit poistaa kirjanmerkin menemällä <a href="#find-bookmarks">kirjanmerkkilistaan</a>, ja vetämällä sormella kirjanmerkin oikeasta reunasta vasemmalle päin. Vedä sormi kokonaan vasemmalle, niin kirjanmerkki poistuu.</p>
 
-      <h3>Miten saan kirjanmerkkini kaikille laitteille?</h3>
-      <p>Kun olet kirjautunut kaikilla laitteillasi samalla <a href="#account">käyttäjätilillä</a>, kaikki kirjanmerkkisi päivittyvät automaattisesti kaikkiin laitteisiisi.</p>
+                    <h4>Kirjanmerkkini hävisivät päivityksen jälkeen?</h4>
+                    <p class="card-text">Jos kirjanmerkkisi hävisivät 6.0-päivityksen jälkeen, avaa tämä linkki niin kirjanmerkit ladataan uudelleen: <a href="topo-maps://migrate-icloud">topo-maps://migrate-icloud</a>. Onnistuneesta palautuksesta tulee ilmoitus <i>"Migration Complete"</i>.</p>
+                </div>
+            </div>
 
-      <h3>Kuinka voin poistaa kirjanmerkin?</h3>
-      <p>Voit poistaa kirjanmerkin menemällä <a href="#find-bookmarks">kirjanmerkkilistaan</a>, ja vetämällä sormella kirjanmerkin oikeasta reunasta vasemmalle päin. Vedä sormi kokonaan vasemmalle, niin kirjanmerkki poistuu.</p>
+            <div id="map-types" class="card mb-3">
+                <h3 class="card-header">2. Karttatyypit</h3>
+                <div class="card-body">
+                    <h4>Kuinka voin vaihtaa karttatyyppiä?</h4>
+                    <p class="card-text">Karttatyypin voi vaihtaa menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Karttataso</i>.</p>
 
-      <h3>Kirjanmerkkini hävisivät päivityksen jälkeen?</h3>
-      <p>Jos kirjanmerkkisi hävisivät 6.0-päivityksen jälkeen, avaa tämä linkki niin kirjanmerkit ladataan uudelleen: <a href="topo-maps://migrate-icloud">topo-maps://migrate-icloud</a>. Onnistuneesta palautuksesta tulee ilmoitus <i>"Migration Complete"</i>.</p>
+                    <h4>Mitä karttoja minulla on käytettävissäni?</h4>
+                    <p class="card-text">Saatavilla ovat maanmittauslaitoksen maastokartat, kaupunkikartat ja ortokuvat.</p>
+                    <p class="card-text">Ostamalla Maastokartat-sovelluksen, sait myös käyttöoikeuden kaikkien muidenkin saatavilla olevien maiden Maastokarttoihin ilmaiseksi.</p>
+
+                    <h4>Mikä on suomalaisten karttojen lähde?</h4>
+                    <p class="card-text">Maastokartoissa, kaupunkikartoissa ja ortokuvissa käytetyt kartat tulevat Maanmittauslaitokselta ja merikartoissa käytetyt kartat tulevat Liikennevirastolta.</p>
+
+                    <h4>Kuinka usein kartat päivitetään?</h4>
+                    <p class="card-text">Suuren mittakaavan karttakuvat on tallennettu välimuistiin palvelimelle, ja ne päivitetään epäsäännöllisesti parin kuukauden välein.</p>
+                    <p class="card-text">Pienen mittakaavan karttakuvat ladataan aina suoraan karttojen toimittajalta, joten saat niistä aina uusimman version. Voit tyhjentää karttojen välimuistin menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Tyhjennä välimuisti</i>.</p>
+
+                    <h4 id="map-cache">Miten karttojen välimuisti toimii?</h4>
+                    <p class="card-text">Kun selaat karttoja, kaikki mitä näet näytölläsi, on automaattisesti tallennettu laitteen muistiin.</p>
+                    <p class="card-text">Voit tyhjentää karttojen välimuistin menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Tyhjennä välimuisti</i></p>
+                    <p class="card-text">Voit myös ladata karttoja valitsemaltasi alueelta käyttämällä <a href="#map-downloader">karttojen lataajaa</a>.</p>
+
+                    <h4>Mihin muihin maihin maastokartat ovat saatavilla?</h4>
+                    <p class="card-text">Tällä hetkellä maastokartat ovat saatavilla Australiaan, Itävaltaan, Belgiaan, Kanadaan, Ranskaan, Saksaan, Islantiin, Alankomaihin, Uuteen-Seelantiin, Norjaan, Espanjaan, Ruotsiin, Sveitsiin ja Yhdysvaltoihin.</p>
+                    <p class="card-text">Myös maailmanlaajuisia karttatyyppejä on saatavilla, kuten Thunderforest Outdoors, joka hyödyntää OpenStreetMapin dataa.</p>
+
+                    <h4>Miten saan lisäkarttatasot (esim. kiinteistörajat) käyttöön</h4>
+                    <p class="card-text">Kiinteistörajat ja muut lisäkarttatasot ovat karttatyyppikohtaisia. Eri maiden karttoihin ovat saatavilla erilaisia lisätasoja.</p>
+                    <p class="card-text">Lista saatavilla olevista tasoista löytyy menemällä sovelluksen asetuksiin, sieltä karttataso, sieltä valitsemalla oma karttataso (ylimpänä), ja sen jälkeen valitsemalla lisätasot.</p>
+
+                    <h4>Tarvitsen oman karttatyypin</h4>
+                    <p class="card-text">Sovellukseen on myös mahdollista lisätä sinulle käyttöön oma karttatyyppi, joka yhdistää määrittelemääsi WMS/WMTS-palvelimeen. Oman karttatason käyttöönotto on ilmaista, ota vain yhteyttä <a href="mailto:tuki@topomaps.app">tuki@topomaps.app</a>,
+                        niin lisätään karttataso!</p>
+                </div>
+            </div>
+
+            <div id="map-downloader" class="card mb-3">
+                <h3 class="card-header">3. Karttojen lataus</h3>
+                <div class="card-body">
+                    <h4>Miten karttojen lataus toimii?</h4>
+                    <p class="card-text">Karttojen lataukseen pääsee menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Karttojen lataus</i>.</p>
+                    <p class="card-text">Sen jälkeen zoomaa haluamasi alueen kohdalle, ja paina <i>Aloita</i>-napista näytön alareunasta.</p>
+                    <p class="card-text">10 km² alue ladattuna käyttää suunnilleen 10 megatavua tallennustilaa laitteeltasi.</p>
+                    <p class="card-text">Voit ladata maksimissaan 100km² kokoisen alueen, mutta huomioithan sen, että suurien alueiden latauksessa saattaa kestää pitkä aika.</p>
+                    <p class="card-text">Aiemmin ladatut alueet näkyvät keltaisella uusia alueita ladattaessa. Ei haittaa vaikka uuden alueen lataamisessa keltaista jo-ladattua aluetta tulisi mukaan. Se jätetään lataamatta automaattisesti.</p>
+                    <p class="card-text">Karttojen välimuistin voi tyhjentää menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Tyhjennä välimuisti</i></p>
+
+                    <h4>Voinko ladata kaikkia karttatasoja?</h4>
+                    <p class="card-text">Kaikkia karttatasoja ei ole sopimussyistä sallittua ladata.</p>
+
+                    <h4>Lista tasoista joita ei voi ladata:</h4>
+                    <ul>
+                        <li>Thunderforest Outdoors</li>
+                        <li>Sveitsin maastokartat (swisstopo)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="account" class="card mb-3">
+                <h3 class="card-header">4. Käyttäjätili</h3>
+                <div class="card-body">
+                    <h4>Mitä hyötyä käyttäjätilistä on?</h4>
+                    <p class="card-text">Käyttäjätili mahdollistaa <a href="location-sharing">sijainnin jaon</a> käyttämisen, ja myös ollessasi kirjautuneena kirjanmerkkisi synkronoituvat kaikkien laitteittesi välillä. Muita ominaisuuksia on tulossa myöhemmissä päivityksissä.</p>
+
+                    <h4>Kuinka voin luoda käyttäjätilin?</h4>
+                    <p class="card-text">Voit luoda uuden käyttäjätilin menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Kirjaudu sisään</i>. Sen jälkeen valitse <i>Luo tili</i>.</p>
+                    <p class="card-text">Sinulta pyydetään sähköpostiosoite, salasana, salasanan vahvistus ja vaaditaan yksityisyyskäytännön hyväksyminen.</p>
+                    <p class="card-text">Sähköpostiosoite saatetaan varmistaa, joten sen täytyy olla oikea.</p>
+
+                    <h4>Mikä on <i>Kirjaudu sisään Applella</i>?</h4>
+                    <p class="card-text">Kirjaudu sisään Applella on iOS 13-päivityksen mukana tullut uusi kirjautumistapa, joka mahdollistaa helpomman kirjautumisen.</p>
+                    <p class="card-text">Voit käyttää sitä painalla mustasta <b>Kirjaudu sisään Applella</b>-napista. Sen jälkeen sovellus kysyy haluatko jakaa sovellukselle oikean sähköpostiosoitteesi, vai piilotetun version.</p>
+
+                    <h4>Olen unohtanut salasanani?</h4>
+                    <p class="card-text">Voit painaa <b>Unohditko salasanasi?</b>-nappia kirjautumissivulta. Jos tili löytyy antamallasi sähköpostiosoitteella, siihen lähetetään palautusviesti. Jos sähköpostiosoitetta ei löydy, mitään ei tapahdu.</p>
+
+                    <h4>Haluan poistaa käyttäjätilini tai haluan nähdä minusta tallennetut tiedot</h4>
+                    <p class="card-text">Voit <a href="#contact">ottaa yhteyttä</a> meihin sähköpostilla sovelluksen kautta tai suoraan.
+                </div>
+            </div>
+
+            <div id="location-sharing" class="card mb-3">
+                <h3 class="card-header">5. Sijainnin jako</h3>
+                <div class="card-body">
+                    <h4>Mikä sijainnin jako on?</h4>
+                    <p class="card-text">Sijainnin jako on ominaisuus, jonka avulla voit jakaa sijaintisi toisten laitteiden kanssa, joissa on myös sovellus asennettuna.</p>
+
+                    <h4>Miten jaan sijaintini muille käyttäjille?</h4>
+                    <ol>
+                        <li>Mene sovelluksesi asetuksiin</li>
+                        <li>Paina käyttäjä-napista, ja kirjaudu sisään jos et ole vielä kirjautunut</li>
+                        <li>Valitse listasta sijainnin jaot</li>
+                        <li>Paina '+'-nappia, ja aseta jaolle nimi, esim. <i>Oliverin iPhone</i></li>
+                        <li>Kirjoita toisen käyttäjän sähköpostiosoite siihen varattuun kenttään. Jos et tiedä toisen käyttäjän sähköpostiosoitetta, pyydä häntä tarkistamaan se omasta laitteestaan. Huomioithan, että molempien käyttäjien tulee olla kirjautuneena
+                            jotta ominaisuus toimii.
+                        </li>
+                        <li>Valitse umpeutumispäivä jaolle. Tämä on kätevä ominaisuus jos haluat jakaa sijaintisi esim. vain viikonlopun ajaksi. Ajan kuluttua sijaintisi poistuu automaattisesti toisen käyttäjän kartalta. Vakiojakoaika on yksi vuosi.</li>
+                        <li>Jos sovellus antaa virheen "Sijainnin jako ei ole käytössä", käynnistä sovellus uudelleen ja odota että näet sijaintisi pääkartalla. Tämän jälkeen toista nämä ohjeet uudelleen.</li>
+                        <li>Laitteesi näkyy nyt toisen käyttäjän kaikilla laitteilla pallona.</li>
+                    </ol>
+                    <p class="card-text">Kun jaat sijaintisi, jaat ainoastaan tämänhetkisen laitteesi sijainnin. Jos esimerkiksi jaat sijaintisi iPhonellasi, iPadisi sijaintia EI jaeta. Jokaisella laitteella täytyy tehdä jako erikseen.</p>
+                    <p class="card-text">Voit poistaa jaon jo ennen päättymispäivää avaamalla jaon, ja painamalla roskakorin kuvaa.</p>
+
+                    <h4>Kuinka usein sijainti päivittyy?</h4>
+                    <p class="card-text">Sijainti päivitetään 10 sekunnin välein.</p>
+                </div>
+            </div>
+
+            <div id="account" class="card mb-3">
+                <h3 class="card-header">6. Haku</h3>
+                <div class="card-body">
+                    <h4>Miten pääsen hakuun?</h4>
+                    <p class="card-text">Pääset hakuun painamalla hakupalkkia kartan yläreunassa.</p>
+
+                    <h4>Mitä voin hakea?</h4>
+                    <p class="card-text">Haku-toiminnon avulla voit hakea osoitteita, paikkoja ja koordinaatteja. Voit myös liittää tekstiä hakukenttään.</p>
+
+                    <h4>Miten koordinaattien haku toimii?</h4>
+                    <p class="card-text">Sovellus tunnistaa, jos olet kirjoittanut numeroita kenttään. Silloin sinulle ehdotetaan mahdollisuutta avata hakusana koordinaatteina.</p>
+                </div>
+            </div>
+
+            <div id="settings" class="card mb-3">
+                <h3 class="card-header">7. Asetukset</h3>
+                <div class="card-body">
+                    <h4>Kuinka pääsen asetuksiin?</h4>
+                    <p class="card-text">Asetuksiin pääsee painamalla hammasratas-kuvaketta näytön oikeassa alakulmassa.</p>
+
+                    <h4>Mitä asetuksia sovelluksessa on?</h4>
+
+                    <ul>
+                        <li><a href="#account">Tili</a></li>
+                        <li>Kirjaudu ulos / kirjaudu sisään</li>
+                    </ul>
+
+                    <ul>
+                        <li>Karttatyyppi</li>
+                        <li><a href="#map-downloader">Karttojen lataus</a></li>
+                        <li><a href="#map-cache">Tyhjennä välimuisti</a></li>
+                        <li>Näytä suunta</li>
+                    </ul>
+
+                    <ul>
+                        <li>Nopeusyksikkö
+                            <ol>
+                                <li>kilometriä tunnissa (km/h)</li>
+                                <li>mailia tunnissa (mph)</li>
+                                <li>metriä sekunnissa (m/s)</li>
+                                <li>solmu (kn)</li>
+                                <li>jalkaa sekunnissa (ft/s)</li>
+                            </ol>
+                        </li>
+                        <li>Koordinaattiyksikkö
+                            <ol>
+                                <li>Desimaaliasteet <b>(60.192059, 24.945831)</b></li>
+                                <li>DMS <b>(60° 11' 31.4124'', N 24° 56' 44.9916'' E)</b></li>
+                                <li>ETRS-TM35FIN <b>(N: 6674572.59453 E: 386100.310867)</b></li>
+                                <li>MGRS <b>(30U XC 9925 0962)</b></li>
+                            </ol>
+                    </ul>
+
+                    <ul>
+                        <li>Sovelluksen versio</li>
+                        <li>Kolmansien osapuolien kiitokset</li>
+                        <li>Usein kysytyt kysymykset (tämä sivu)</li>
+                        <li>Sovelluksen asetukset</li>
+                        <li>Ota yhteyttä tukeen</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="contact" class="card mb-3">
+                <h3 class="card-header">8. Ota yhteyttä</h3>
+                <div class="card-body">
+                    <p class="card-text">Jäikö jotakin epäselväksi, vai tarvitsetko apua sovelluksen kanssa?</p>
+                    <p class="card-text">Ota yhteyttä laittamalla sähköpostia osoitteeseen <a href="mailto:tuki@topomaps.app">tuki@topomaps.app</a>. Vastaan yleensä jo saman päivän aikana.</p>
+                    <p class="card-text">Jos sinulla on ongelma sovelluksen kanssa, kannattaa viesti lähettää suoraan sovelluksen asetusten kautta, niin tuki saa suoraan kaikki tarvittavat tiedot.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <hr>
+            <p class="card-text">&copy; Oliver Kulpakko 2015-2019</p>
+
+            <div id="legal">
+                <sup>Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</sup>
+            </div>
+        </footer>
     </div>
-
-    <div id="map-types" class="category">
-      <h2>2. Karttatyypit</h2>
-
-      <h3>Kuinka voin vaihtaa karttatyyppiä?</h3>
-      <p>Karttatyypin voi vaihtaa menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Karttataso</i>.</p>
-
-      <h3>Mitä karttoja minulla on käytettävissäni?</h3>
-      <p>Saatavilla ovat maanmittauslaitoksen maastokartat, kaupunkikartat ja ortokuvat.</p>
-      <p>Ostamalla Maastokartat-sovelluksen, sait myös käyttöoikeuden kaikkien muidenkin saatavilla olevien maiden Maastokarttoihin ilmaiseksi.</p>
-
-      <h3>Mikä on suomalaisten karttojen lähde?</h3>
-      <p>Maastokartoissa, kaupunkikartoissa ja ortokuvissa käytetyt kartat tulevat Maanmittauslaitokselta ja merikartoissa käytetyt kartat tulevat Liikennevirastolta.</p>
-
-      <h3>Kuinka usein kartat päivitetään?</h3>
-      <p>Suuren mittakaavan karttakuvat on tallennettu välimuistiin palvelimelle, ja ne päivitetään epäsäännöllisesti parin kuukauden välein.</p>
-      <p>Pienen mittakaavan karttakuvat ladataan aina suoraan karttojen toimittajalta, joten saat niistä aina uusimman version. Voit tyhjentää karttojen välimuistin menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Tyhjennä välimuisti</i>.</p>
-
-      <h3 id="map-cache">Miten karttojen välimuisti toimii?</h3>
-      <p>Kun selaat karttoja, kaikki mitä näet näytölläsi, on automaattisesti tallennettu laitteen muistiin.</p>
-      <p>Voit tyhjentää karttojen välimuistin menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Tyhjennä välimuisti</i></p>
-      <p>Voit myös ladata karttoja valitsemaltasi alueelta käyttämällä <a href="#map-downloader">karttojen lataajaa</a>.</p>
-
-      <h3>Mihin muihin maihin maastokartat ovat saatavilla?</h3>
-      <p>Tällä hetkellä maastokartat ovat saatavilla Australiaan, Itävaltaan, Belgiaan, Kanadaan, Ranskaan, Saksaan, Islantiin, Alankomaihin, Uuteen-Seelantiin, Norjaan, Espanjaan, Ruotsiin, Sveitsiin ja Yhdysvaltoihin.</p>
-      <p>Myös maailmanlaajuisia karttatyyppejä on saatavilla, kuten Thunderforest Outdoors, joka hyödyntää OpenStreetMapin dataa.</p>
-
-      <h3>Miten saan lisäkarttatasot (esim. kiinteistörajat) käyttöön</h3>
-      <p>Kiinteistörajat ja muut lisäkarttatasot ovat karttatyyppikohtaisia. Eri maiden karttoihin ovat saatavilla erilaisia lisätasoja.</p>
-      <p>Lista saatavilla olevista tasoista löytyy menemällä sovelluksen asetuksiin, sieltä karttataso, sieltä valitsemalla oma karttataso (ylimpänä), ja sen jälkeen valitsemalla lisätasot.</p>
-
-      <h3>Tarvitsen oman karttatyypin</h3>
-      <p>Sovellukseen on myös mahdollista lisätä sinulle käyttöön oma karttatyyppi, joka yhdistää määrittelemääsi WMS/WMTS-palvelimeen. Oman karttatason käyttöönotto on ilmaista, ota vain yhteyttä <a href="mailto:tuki@topomaps.app">tuki@topomaps.app</a>,
-        niin lisätään karttataso!</p>
-    </div>
-
-    <div id="map-downloader" class="category">
-      <h2>3. Karttojen lataaja</h2>
-
-      <h3>Miten karttojen lataus toimii?</h3>
-      <p>Karttojen lataukseen pääsee menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Karttojen lataus</i>.</p>
-      <p>Sen jälkeen zoomaa haluamasi alueen kohdalle, ja paina <i>Aloita</i>-napista näytön alareunasta.</p>
-      <p>10 km² alue ladattuna käyttää suunnilleen 10 megatavua tallennustilaa laitteeltasi.</p>
-      <p>Voit ladata maksimissaan 100km² kokoisen alueen, mutta huomioithan sen, että suurien alueiden latauksessa saattaa kestää pitkä aika.</p>
-      <p>Aiemmin ladatut alueet näkyvät keltaisella uusia alueita ladattaessa. Ei haittaa vaikka uuden alueen lataamisessa keltaista jo-ladattua aluetta tulisi mukaan. Se jätetään lataamatta automaattisesti.</p>
-      <p>Karttojen välimuistin voi tyhjentää menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Tyhjennä välimuisti</i></p>
-
-      <h3>Voinko ladata kaikkia karttatasoja?</h3>
-      <p>Kaikkia karttatasoja ei ole sopimussyistä sallittua ladata.</p>
-
-      <h4>Lista tasoista joita ei voi ladata:</h4>
-      <ul>
-        <li>Thunderforest Outdoors</li>
-        <li>Sveitsin maastokartat (swisstopo)</li>
-      </ul>
-    </div>
-
-    <div id="account" class="category">
-      <h2>Käyttäjätili</h2>
-
-      <h3>Mitä hyötyä käyttäjätilistä on?</h3>
-      <p>Käyttäjätili mahdollistaa <a href="location-sharing">sijainnin jaon</a> käyttämisen, ja myös ollessasi kirjautuneena kirjanmerkkisi synkronoituvat kaikkien laitteittesi välillä. Muita ominaisuuksia on tulossa myöhemmissä päivityksissä.</p>
-
-      <h3>Kuinka voin luoda käyttäjätilin?</h3>
-      <p>Voit luoda uuden käyttäjätilin menemällä sovelluksen asetuksiin, ja valitsemalla sieltä <i>Kirjaudu sisään</i>. Sen jälkeen valitse <i>Luo tili</i>.</p>
-      <p>Sinulta pyydetään sähköpostiosoite, salasana, salasanan vahvistus ja vaaditaan yksityisyyskäytännön hyväksyminen.</p>
-      <p>Sähköpostiosoite saatetaan varmistaa, joten sen täytyy olla oikea.</p>
-
-      <h3>Mikä on <i>Kirjaudu sisään Applella</i>?</h3>
-      <p>Kirjaudu sisään Applella on iOS 13-päivityksen mukana tullut uusi kirjautumistapa, joka mahdollistaa helpomman kirjautumisen.</p>
-      <p>Voit käyttää sitä painalla mustasta <b>Kirjaudu sisään Applella</b>-napista. Sen jälkeen sovellus kysyy haluatko jakaa sovellukselle oikean sähköpostiosoitteesi, vai piilotetun version.</p>
-
-      <h3>Olen unohtanut salasanani?</h3>
-      <p>Voit painaa <b>Unohditko salasanasi?</b>-nappia kirjautumissivulta. Jos tili löytyy antamallasi sähköpostiosoitteella, siihen lähetetään palautusviesti. Jos sähköpostiosoitetta ei löydy, mitään ei tapahdu.</p>
-
-      <h3>Haluan poistaa käyttäjätilini tai haluan nähdä minusta tallennetut tiedot</h3>
-      <p>Voit <a href="#contact">ottaa yhteyttä</a> meihin sähköpostilla sovelluksen kautta tai suoraan.
-    </div>
-
-    <div id="location-sharing" class="category">
-      <h2>5. Sijainnin jako</h2>
-
-      <h3>Mikä sijainnin jako on?</h3>
-      <p>Sijainnin jako on ominaisuus, jonka avulla voit jakaa sijaintisi toisten laitteiden kanssa, joissa on myös sovellus asennettuna.</p>
-
-      <h3>Miten jaan sijaintini muille käyttäjille?</h3>
-      <ol>
-        <li>Mene sovelluksesi asetuksiin</li>
-        <li>Paina käyttäjä-napista, ja kirjaudu sisään jos et ole vielä kirjautunut</li>
-        <li>Valitse listasta sijainnin jaot</li>
-        <li>Paina '+'-nappia, ja aseta jaolle nimi, esim. <i>Oliverin iPhone</i></li>
-        <li>Kirjoita toisen käyttäjän sähköpostiosoite siihen varattuun kenttään. Jos et tiedä toisen käyttäjän sähköpostiosoitetta, pyydä häntä tarkistamaan se omasta laitteestaan. Huomioithan, että molempien käyttäjien tulee olla kirjautuneena jotta ominaisuus
-          toimii.
-        </li>
-        <li>Valitse umpeutumispäivä jaolle. Tämä on kätevä ominaisuus jos haluat jakaa sijaintisi esim. vain viikonlopun ajaksi. Ajan kuluttua sijaintisi poistuu automaattisesti toisen käyttäjän kartalta. Vakiojakoaika on yksi vuosi.</li>
-        <li>Jos sovellus antaa virheen "Sijainnin jako ei ole käytössä", käynnistä sovellus uudelleen ja odota että näet sijaintisi pääkartalla. Tämän jälkeen toista nämä ohjeet uudelleen.</li>
-        <li>Laitteesi näkyy nyt toisen käyttäjän kaikilla laitteilla pallona.</li>
-      </ol>
-      <p>Kun jaat sijaintisi, jaat ainoastaan tämänhetkisen laitteesi sijainnin. Jos esimerkiksi jaat sijaintisi iPhonellasi, iPadisi sijaintia EI jaeta. Jokaisella laitteella täytyy tehdä jako erikseen.</p>
-      <p>Voit poistaa jaon jo ennen päättymispäivää avaamalla jaon, ja painamalla roskakorin kuvaa.</p>
-
-      <h3>Kuinka usein sijainti päivittyy?</h3>
-      <p>Sijainti päivitetään 10 sekunnin välein.</p>
-    </div>
-
-    <div id="search" class="category">
-      <h2>6. Haku</h2>
-
-      <h3>Miten pääsen hakuun?</h3>
-      <p>Pääset hakuun painamalla hakupalkkia kartan yläreunassa.</p>
-
-      <h3>Mitä voin hakea?</h3>
-      <p>Haku-toiminnon avulla voit hakea osoitteita, paikkoja ja koordinaatteja. Voit myös liittää tekstiä hakukenttään.</p>
-
-      <h3>Miten koordinaattien haku toimii?</h3>
-      <p>Sovellus tunnistaa, jos olet kirjoittanut numeroita kenttään. Silloin sinulle ehdotetaan mahdollisuutta avata hakusana koordinaatteina.</p>
-    </div>
-
-    <div id="settings" class="category">
-      <h2>7. Asetukset</h2>
-
-      <h3>Kuinka pääsen asetuksiin?</h3>
-      <p>Asetuksiin pääsee painamalla hammasratas-kuvaketta näytön oikeassa alakulmassa.</p>
-
-      <h3>Mitä asetuksia sovelluksessa on?</h3>
-
-      <ul>
-        <li><a href="#account">Tili</a></li>
-        <li>Kirjaudu ulos / kirjaudu sisään</li>
-      </ul>
-
-      <ul>
-        <li>Karttatyyppi</li>
-        <li><a href="#map-downloader">Karttojen lataus</a></li>
-        <li><a href="#map-cache">Tyhjennä välimuisti</a></li>
-        <li>Näytä suunta</li>
-      </ul>
-
-      <ul>
-        <li>Nopeusyksikkö
-          <ol>
-            <li>kilometriä tunnissa (km/h)</li>
-            <li>mailia tunnissa (mph)</li>
-            <li>metriä sekunnissa (m/s)</li>
-            <li>solmu (kn)</li>
-            <li>jalkaa sekunnissa (ft/s)</li>
-          </ol>
-        </li>
-        <li>Koordinaattiyksikkö
-          <ol>
-            <li>Desimaaliasteet <b>(60.192059, 24.945831)</b></li>
-            <li>DMS <b>(60° 11' 31.4124'', N 24° 56' 44.9916'' E)</b></li>
-            <li>ETRS-TM35FIN <b>(N: 6674572.59453 E: 386100.310867)</b></li>
-            <li>MGRS <b>(30U XC 9925 0962)</b></li>
-          </ol>
-      </ul>
-
-      <ul>
-        <li>Sovelluksen versio</li>
-        <li>Kolmansien osapuolien kiitokset</li>
-        <li>Usein kysytyt kysymykset (tämä sivu)</li>
-        <li>Sovelluksen asetukset</li>
-        <li>Ota yhteyttä tukeen</li>
-      </ul>
-    </div>
-
-    <div id="contact" class="category">
-      <h2>8. Ota yhteyttä</h2>
-      <p>Jäikö jotakin epäselväksi, vai tarvitsetko apua sovelluksen kanssa?</p>
-      <p>Ota yhteyttä laittamalla sähköpostia osoitteeseen <a href="mailto:tuki@topomaps.app">tuki@topomaps.app</a>. Vastaan yleensä jo saman päivän aikana.</p>
-      <p>Jos sinulla on ongelma sovelluksen kanssa, kannattaa viesti lähettää suoraan sovelluksen asetusten kautta, niin tuki saa suoraan kaikki tarvittavat tiedot.</p>
-    </div>
-
-    <p id="copyright"><b>&copy; Oliver Kulpakko 2015-2019.</b></p>
-  </div>
 </body>
 
 </html>
