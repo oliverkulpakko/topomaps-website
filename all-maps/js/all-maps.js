@@ -31,7 +31,14 @@ fetch('https://api.topomaps.app/maps')
 
             countries[country].forEach(element => {
                 let itemElement = document.createElement('li');
+                itemElement.className = 'country-item';
                 itemElement.textContent = formattedName(element.type) + ' (' + element.copyright + ')';
+
+                let tryElement = document.createElement('a');
+                tryElement.href = 'map/?id=' + element.id;
+                tryElement.textContent = 'Try it Out!';
+
+                itemElement.appendChild(tryElement);
 
                 itemsList.appendChild(itemElement);
             });

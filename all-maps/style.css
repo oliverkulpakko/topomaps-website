@@ -12,6 +12,10 @@ body {
     margin-top: 1em;
 }
 
+.country-item a {
+    margin-left: .25em;
+}
+
 
 /* Footer */
 
