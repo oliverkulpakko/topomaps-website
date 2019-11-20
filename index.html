@@ -1,73 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Topo Maps</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <title>Topo Maps</title>
 </head>
 
 <body>
-  <header>
-    <img class="app-icon" src="img/icon.svg" alt="App Icon">
-    <h1>Topo Maps</h1>
-    <p><b>Topo Maps</b> is a map application for iPhone, iPad, Apple Watch and Mac. It includes topographic maps to 15 countries.</p>
-    <p>You can preview different map types <a href="https://eaststudios.net/TopoMapsPreview/">here</a>.</p>
-    <a href="https://apps.apple.com/app/topo-maps/id929001708"><img src="img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store"></a>
-    <a href="#" onclick="alert('Coming Soon!');"><img src="img/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store"></a>
-    <!--<a href="https://apps.apple.com/app/topo-maps/id1239400279"><img src="img/Download_on_the_Mac_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the Mac App Store"></a>-->
-  </header>
-
-  <div id="features">
-    <h2>Features:</h2>
-    <ol>
-      <li>
-        <p><b>Maps</b></p>
-        <p>All of the maps are the sharpest and the newest ones available.</p>
-        <p>Maps are periodically updated.</p>
-      </li>
-      <li>
-        <p><b>Map Downloader</b></p>
-        <p><b>Map Downloader</b> allows you to download maps from your favorite areas for offline usage. You can download as many areas as you want.</p>
-      </li>
-      <li>
-        <p><b>Bookmarks</b></p>
-        <p>Add your own waypoints to the map just by holding your finger. You can also record routes and save them too. And if you have multiple devices, the bookmarks are automatically synced between them via iCloud.</p>
-      </li>
-      <li>
-        <p><b>Location Sharing</b></p>
-        <p>Share your location with other <b>Topo Maps</b> users by giving them your Location Sharing Code. They will be able to see you on their map when you have your app opened. You can share your location to as many people as you like. You can also add
-          as many people to your map as you want.</p>
-      </li>
-      <li>
-        <p><b>Search</b></p>
-        <p>Search for places, addresses or coordinates. A list of suggestions based on your current location will be displayed.</p>
-      </li>
-    </ol>
-  </div>
-
-  <div id="contact">
-    <h2>Contact</h2>
-    <!--<p>If you are experiencing any issues with the app, make sure to check <a href="faq/">Frequently Asked Questions</a> first, and then send me an email to the address below.</p>-->
-    <p>In case you have any questions about the app, please send me an email to <a href="mailto:support@topomaps.app">support@topomaps.app</a></p>
-  </div>
-
-  <footer>
-    <hr>
-    <p>&copy; Oliver Kulpakko 2015-2019.</p>
-
-    <div id="legal">
-      <sup>Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</sup>
-    </div>
-
-    <hr>
-
-    <nav>
-      <a href="privacy/">Privacy Policy</a>
-      <a href="https://itunes.apple.com/app/topo-maps/id929001708">App Store</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Topo Maps</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="privacy/">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-  </footer>
+    <div class="container">
+        <main>
+            <div class="card mb-3">
+                <img src="img/promo.png" class="card-img-top" alt="Topo Maps">
+                <div class="card-body">
+                    <div class="app-info">
+                        <img class="app-icon" src="img/icon.svg">
+                        <h3 class="card-title">Topo Maps</h3>
+                    </div>
+
+                    <p class="card-text"><b>Topo Maps</b> is an outdoor map app for iOS, iPadOS, watchOS, and macOS. Worldwide maps are included.</p>
+                    <p class="card-text">The app contains useful features such as map downloading, bookmarks, cloud syncing, location sharing, and many others.</p>
+
+                    <a href="https://apps.apple.com/app/topo-maps/id929001708">
+                        <img src="img/app-store-en.svg" alt="Download on the App Store">
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <section>
+            <div class="card mb-3">
+                <img src="img/promo-available-maps.png" class="card-img-top" alt="Topo Maps">
+                <div class="card-body">
+                    <h3 class="card-title">Included Maps</h3>
+                    <ul>
+                        <li>Thunderforest Outdoors - for the entire world</li>
+                        <li>USGS National Map - United States</li>
+                        <li>NOAA Marine Charts - United States</li>
+                        <li>National Map - Australia</li>
+                        <li>LINZ Topo Maps - New Zealand</li>
+                        <li>And many more! <a href="all-maps/">Complete List</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card mb-3">
+                <h5 class="card-header">Contact Us</h5>
+                <div class="card-body">
+                    <p class="card-text">If you have any questions about the app, please contact us <a href="mailto:support@topomaps.app">via email</a>. We will answer as soon as possible.</p>
+                    <p class="card-text">In case you are experiencing a problem with the app, please send us an email straight from inside the app, and we'll get the required information automatically.</p>
+
+                    <a href="mailto:support@topomaps.app" class="btn btn-primary">support@topomaps.app</a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <footer>© Oliver Kulpakko 2015-2019</footer>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,21 @@
+html {
+    background-color: #f9f9f9;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Seravek', 'Arial', sans-serif;
+    color: #1b1b1b;
+    font-size: 1.15em;
+    max-width: 40em;
+    margin: auto;
+    margin-top: 1em;
+}
+
+
+/* Footer */
+
+footer {
+    color: #777;
+    margin-bottom: 1em;
+}

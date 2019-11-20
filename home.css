@@ -1,0 +1,70 @@
+html {
+    background-color: #f9f9f9;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Seravek', 'Arial', sans-serif;
+    color: #1b1b1b;
+    font-size: 1.15em;
+    max-width: 40em;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main */
+
+main .contact>a {
+    display: inline-block;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    padding: 9px 12px;
+    border: 1px solid #070707;
+    border-radius: 10px;
+    background: #464646;
+    color: #FFF;
+}
+
+main .contact>a span {
+    margin-left: 8px;
+}
+
+main .contact>a:hover {
+    background: #202020;
+    text-decoration: none;
+}
+
+
+/* Project */
+
+.app-info>p {
+    float: right;
+}
+
+.app-icon {
+    margin-right: 1em;
+    float: left;
+    height: 3.75em;
+    border-radius: 22.37%;
+}
+
+.customer-review span {
+    display: block;
+    text-align: right;
+}
+
+
+/* Footer */
+
+footer {
+    color: #777;
+    margin-bottom: 1em;
+}
