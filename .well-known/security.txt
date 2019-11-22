@@ -1,0 +1,2 @@
+Contact: mailto:security@kulpakko.com
+Canonical: https://topomaps.app/.well-known/security.txt
