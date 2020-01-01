@@ -1,12 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta http-equiv="refresh" content="0; url=https://topomaps.app">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../home.css">
+
+    <title>Frequently Asked Questions | Topo Maps</title>
 </head>
 
 <body>
-  <p>The page has been moved to: <a href="https://topomaps.app">topomaps.app</a></p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Topo Maps</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../privacy">Privacy Policy</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Frequently Asked Questions <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <div class="card mb-3">
+                <h3 class="card-header">Frequently Asked Questions</h4>
+                    <div class="card-body">
+                        <p class="card-text">Last updated on November 29th, 2019.</p>
+                        <ol>
+                            <li><a href="#bookmarks">Bookmarks</a></li>
+                            <li><a href="#map-types">Map Layers</a></li>
+                            <li><a href="#map-downloader">Map Downloader</a></li>
+                            <li><a href="#account">User Account</a></li>
+                            <li><a href="#location-sharing">Sijainnin jako</a></li>
+                            <li><a href="#search">Haku</a></li>
+                            <li><a href="#contact">Ota yhteyttä</a></li>
+                        </ol>
+                    </div>
+            </div>
+
+            <div id="bookmarks" class="card mb-3">
+                <h3 class="card-header">1. Bookmarks</h3>
+                <div class="card-body">
+                    <h4>How can I add a place to bookmarks?</h4>
+                    <p class="card-text">You can add a bookmark by holding your finger on the map at the desired location.</p>
+                    <p class="card-text">You will be prompted to give a name for the new bookmark. It is not required, but helpful if you have a lot of bookmarks.</p>
+
+                    <h4 id="find-bookmarks">Where can I find my bookmarks?</h4>
+                    <p class="card-text">Tap the bookmarks icon (a book) in the bottom center of the screen.</p>
+                    <p class="card-text">Tap a bookmark in the list to open it on the map.</p>
+
+                    <h4>I have an iPhone and an iPad, and I'd like to have the same bookmarks on both devices. Is it possible?</h4>
+                    <p class="card-text">When you are logged in to an <a href="#account">account</a>, all your bookmarks will be automatically synced between your devices.</p>
+
+                    <h4>How can I delete a bookmark?</h4>
+                    <p class="card-text">Go to the <a href="#find-bookmarks">bookmark list</a>, and swipe from right on the bookmark. A red "Delete" button will appear.</p>
+
+                    <h4>How can I import a GPX file?</h4>
+                    <p class="card-text">When tapping a GPX file in an another app (e.g. Files, Mail), there will be list of available apps. Tap <i>Topo Maps</i> on the list, and you'll be able to import the GPX-file.</p>
+
+                    <h4>My bookmarks were lost after I updated the app?</h4>
+                    <p class="card-text">In some cases, updating to version 6.0 deleted all bookmarks. Tapping this link: <a href="topo-maps://migrate-icloud">topo-maps://migrate-icloud</a>. After a successful restore, there will be an alert with a text <i>"Migration Complete"</i>.
+                        Please contact us if you have any questions..</p>
+                </div>
+            </div>
+
+            <div id="map-types" class="card mb-3">
+                <h3 class="card-header">2. Map Layers</h3>
+                <div class="card-body">
+                    <h4>How can I change the map layer?</h4>
+                    <p class="card-text">You can change the map layer by going to the app's settings and selecting <i>Map Layer</i>.</p>
+
+                    <h4>How does the map cache work?</h4>
+                    <p class="card-text">As you're browsing the map, everything that you see on your screen is automatically stored.</p>
+                    <p class="card-text">You can clear the cache by going to the app's settings and selecting Clear Cache.</p>
+                    <p class="card-text"><a href="#map-downloader">Map Downloader</a> can also be used to download maps from an area.</p>
+                </div>
+            </div>
+
+            <div id="map-downloader" class="card mb-3">
+                <h3 class="card-header">3. Map Downloader</h3>
+                <div class="card-body">
+                    <h4>How does the Map Downloader work?</h4>
+                    <p class="card-text">You can launch the map downloader by going to the app's settings, and selecting <i>Map Downloader</i>.</p>
+                    <p class="card-text">After that, zoom the map to the area you want to download and tap the <i>Start</i>-button. One download's size is limited to 100km (or 60 mi). Please keep in mind that larger areas can take a considerable amount of time to download.</p>
+                    <p class="card-text">Previously downloaded areas will be shown in yellow when selecting an area. It does not matter if a new download area overlaps with a previously downloaded area. Overlaps will automatically be ignored.</p>
+                    <p class="card-text">You can delete downloaded areas by going to the app's settings and selecting <i>Clear Caches</i>.</p>
+
+                    <h4>Can I download maps from any map layer?</h4>
+                    <p class="card-text">Due to licensing issues, all map layers are not able to be downloaded.</p>
+
+                    <h4>List of maps where downloading is not enabled:</h4>
+                    <ul>
+                        <li>Thunderforest Outdoors</li>
+                        <li>Topo Switzerland (swisstopo)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="account" class="card mb-3">
+                <h3 class="card-header">4. User Account</h3>
+                <div class="card-body">
+                    <h4>What features does the user account offer?</h4>
+                    <p class="card-text">When logged in, you can <a href="location-sharing">share your location</a> with other users, and your bookmarks will be synced between your devices.</p>
+
+                    <h4>How can I create a user account?</h4>
+                    <p class="card-text">You can create an account by going to the app's settings, tapping <i>Log In</i>, and after that select <i>Create Account</i>.</p>
+
+                    <h4>I've forgotten my password.</h4>
+                    <p class="card-text">Tap the <b>Forgot Password?</b>-button in the login screen. Enter your email address. If there is an account with the provided email address, a message with instructions to reset your password will be sent.</p>
+                    <p class="card-text">If the email is incorrect, or there is no account with that email address, nothing will be sent.</p>
+
+                    <h4>I'd like to delete my account or check the data that's stored about me.</h4>
+                    <p class="card-text">Send us an email and we'll help.</p>
+                </div>
+            </div>
+
+            <div id="location-sharing" class="card mb-3">
+                <h3 class="card-header">5. Location Sharing</h3>
+                <div class="card-body">
+                    <h4>What is location sharing?</h4>
+                    <p class="card-text">Location Sharing allows you to share your location live with other users of the app.</p>
+
+                    <h4>How can I share my location with another user?</h4>
+                    <ol>
+                        <li>Make sure that both of you are running the latest version of the app, and have created own accounts.</li>
+                        <li>Go to the app's settings on your device</li>
+                        <li>Tap your account</li>
+                        <li>Tap Location Sharing</li>
+                        <li>Tap the plus-icon in the top right corner</li>
+                        <li>Enter the other user's email address</li>
+                        <li>Optionally, you can enter a custom expiration date for the share. It's one year by default.</li>
+                        <li>Now your location will be shown on the other user's devices.</li>
+                    </ol>
+                    <p class="card-text">When you are creating a location share, you are only sharing the current device's location. For example, if you share your location on your iPhone, your iPad's location won't be shared. </p>
+                    <p class="card-text">You can share your location with as many users as you like.</p>
+                    <p class="card-text">You can delete the share even before the expiration date by tapping on the share and tapping the trash can.</p>
+
+                    <h4>How often is my location updated?</h4>
+                    <p class="card-text">The location is updated every 10 seconds while the app is active.</p>
+                </div>
+            </div>
+
+            <div id="account" class="card mb-3">
+                <h3 class="card-header">6. Haku</h3>
+                <div class="card-body">
+                    <h4>Miten pääsen hakuun?</h4>
+                    <p class="card-text">Pääset hakuun painamalla hakupalkkia kartan yläreunassa.</p>
+
+                    <h4>Mitä voin hakea?</h4>
+                    <p class="card-text">Haku-toiminnon avulla voit hakea osoitteita, paikkoja ja koordinaatteja. Voit myös liittää tekstiä hakukenttään.</p>
+
+                    <h4>Miten koordinaattien haku toimii?</h4>
+                    <p class="card-text">Sovellus tunnistaa, jos olet kirjoittanut numeroita kenttään. Silloin sinulle ehdotetaan mahdollisuutta avata hakusana koordinaatteina.</p>
+                </div>
+            </div>
+
+            <div id="contact" class="card mb-3">
+                <h3 class="card-header">7. Ota yhteyttä</h3>
+                <div class="card-body">
+                    <p class="card-text">Jäikö jotakin epäselväksi, vai tarvitsetko apua sovelluksen kanssa?</p>
+                    <p class="card-text">Ota yhteyttä laittamalla sähköpostia osoitteeseen <a href="mailto:tuki@topomaps.app">tuki@topomaps.app</a>. Vastaan yleensä jo saman päivän aikana.</p>
+                    <p class="card-text">Jos sinulla on ongelma sovelluksen kanssa, kannattaa viesti lähettää suoraan sovelluksen asetusten kautta, niin tuki saa suoraan kaikki tarvittavat tiedot.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <hr>
+            <p class="card-text">&copy; Oliver Kulpakko 2015-2020</p>
+
+            <div id="legal">
+                <sup>Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.</sup>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 </body>
 
 </html>
