@@ -6,10 +6,12 @@ fetch('https://api.topomaps.app/maps')
         let countries = Object.create(null);
 
         data.forEach(element => {
-            if (countries[element.country] == null) {
-                countries[element.country] = [element];
-            } else {
-                countries[element.country].push(element);
+            if (!element.requiresLogin) {
+                if (countries[element.country] == null) {
+                    countries[element.country] = [element];
+                } else {
+                    countries[element.country].push(element);
+                }
             }
         });
 
