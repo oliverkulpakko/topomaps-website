@@ -1,70 +1,65 @@
 fetchLayers(function(layers, error) {
-  if (error) {
-    alert(error);
-    return;
-  }
+    if (error) {
+        alert(error);
+        return;
+    }
 
-  setupMap(layers);
+    setupMap(layers);
 });
 
 function setupMap(layers) {
-  let map = L.map("map").fitWorld();
+    let map = L.map("map").fitWorld();
 
-  L.control.layers(layers).addTo(map);
-  L.control.locate().addTo(map);
+    L.control.layers(layers).addTo(map);
+    L.control.locate().addTo(map);
 
-  map.on("locationfound", onLocationFound);
-  map.on("locationerror", onLocationError);
+    map.on("locationfound", onLocationFound);
 
-  map.locate({
-    setView: true,
-    maxZoom: 16
-  });
+    map.locate({
+        setView: true,
+        maxZoom: 16
+    });
 }
 
 // Map Callbacks
 
 function onLocationFound(e) {
-  let radius = e.accuracy / 2;
+    let radius = e.accuracy / 2;
 
-  L.marker(e.latlng).addTo(map)
-    .bindPopup("You are within " + radius + " meters from this point").openPopup();
+    L.marker(e.latlng).addTo(map)
+        .bindPopup("You are within " + radius + " meters from this point").openPopup();
 
-  L.circle(e.latlng, radius).addTo(map);
-}
-
-function onLocationError(e) {
-  alert(e.message);
+    L.circle(e.latlng, radius).addTo(map);
 }
 
 // Data
 
 function fetchLayers(callback) {
-  let url = "https://eaststudios.net/api/topomaps3/maps";
+    let url = "https://api.topomaps.app/maps";
 
-  fetch(url)
-    .then(res => res.json())
-    .then((out) => {
-      let layers = [];
+    fetch(url)
+        .then(res => res.json())
+        .then((out) => {
+            let layers = [];
 
-      for (map of out) {
-        let urls = [];
-        for (url of map.urls) {
-          urls.push(L.tileLayer(url.template, {
-            attribution: "<a href=\"" + map.copyright.url + "\">" + map.copyright.text + "</a>",
-            minZoom: url.minZoom,
-            maxZoom: url.maxZoom
-          }));
-        }
+            for (map of out) {
+                let urls = [];
+                for (url of map.urls) {
+                    urls.push(L.tileLayer(url.template, {
+                        attribution: "<a href=\"" + map.copyright.url + "\">" + map.copyright.text + "</a>",
+                        minZoom: url.minZoom,
+                        maxZoom: url.maxZoom
+                    }));
+                }
 
-        let name = map.country + " - " + map.type;
+                let name = map.country + " - " + map.type;
 
-        layers[name] = L.layerGroup(urls);
-      }
+                layers[name] = L.layerGroup(urls);
+            }
 
-      callback(layers, null);
-    })
-    .catch(error => {
-      callback(null, error)
-    });
+            callback(layers, null);
+        })
+        .catch(error => {
+            callback(null, error)
+        });
 }
