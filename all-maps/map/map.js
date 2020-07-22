@@ -23,7 +23,7 @@ function setMap(map) {
     map.urls.forEach(element => {
         if (element.wms == null) {
             L.tileLayer(element.template, {
-                attribution: '© ' + map.copyright.owner,
+                attribution: '© ' + map.copyright.text,
                 minZoom: element.minZoom,
                 maxZoom: element.maxZoom
             }).addTo(mapElement);
